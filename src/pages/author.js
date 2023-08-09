@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 // import jolevilogo from "../../assets/authors/logo/jolevilogo.png";
 import authorImg from "../assets/authors/authorImg.png";
 import BookOne from "../assets/authors/BookOne.png";
+import abegwhosendme from "../assets/authors/abegwhosendme.jpg";
+import ttsrandomthoughts from "../assets/authors/ttsrandomthoughts.jpg";
 import BookTwo from "../assets/authors/BookTwo.png";
 import BookThree from "../assets/authors/BookThree.png";
 import Icon from "../assets/authors/icon.png";
@@ -232,14 +234,6 @@ const FirstBook = () => {
   return (
     <div className="container-fluid booksBg">
       <div className="row align-items-center justify-content-center px-4 py-5">
-        <div className="col-lg-5 col-md-5 col-sm-12">
-          <img
-            src={BookOne}
-            className="d-block mx-lg-auto img-fluid"
-            alt=""
-            loading=""
-          />
-        </div>
         <div className="col-lg-6 col-md-7 col-sm-12 pt-3">
           <h3 className="">
             <b>Abeg who send me</b>
@@ -285,6 +279,14 @@ const FirstBook = () => {
             <PreorderBtn />
           </div>
         </div>
+        <div className="col-lg-5 col-md-5 col-sm-12">
+          <img
+            src={BookOne}
+            className="d-block mx-lg-auto img-fluid"
+            alt=""
+            loading=""
+          />
+        </div>
       </div>
     </div>
   );
@@ -293,6 +295,14 @@ const SecondBook = () => {
   return (
     <div className="container-fluid booksBg">
       <div className="row align-items-center justify-content-center px-4 py-5">
+        <div className="col-lg-5 col-md-5 col-sm-12">
+          <img
+            src={BookTwo}
+            className="d-block mx-lg-auto img-fluid"
+            alt=""
+            loading=""
+          />
+        </div>
         <div className="col-lg-6 col-md-7 col-sm-12 pt-3">
           <h3 className="">
             <b>Tts Random Thoughts</b>
@@ -334,14 +344,6 @@ const SecondBook = () => {
           <div className="mb-4">
             <PreorderBtn />
           </div>
-        </div>
-        <div className="col-lg-5 col-md-5 col-sm-12">
-          <img
-            src={BookTwo}
-            className="d-block mx-lg-auto img-fluid"
-            alt=""
-            loading=""
-          />
         </div>
       </div>
     </div>
@@ -394,111 +396,69 @@ const ThirdBook = () => {
 
 const Services = () => {
   return (
-    <div className="container-fluid p-5 aboutBg">
-      <div className="">
-        {" "}
-        <h3 className="pb-4 mx-5">
-          <b>Services</b>
-        </h3>
-        <div className="card-group mx-5">
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto">
-            <div className="row d-lg-flex d-md-flex ">
-              <div className="col-lg-4 col-md-6 col-sm-12 d-lg-flex d-md-flex py-2 align-items-center">
-                <div className="col-lg-3 col-sm-6">
-                  <img src={Icon} className="img-fluid" />
-                  <h6 className="mt-3">Business Consulting</h6>
-                </div>
-                <div className="col-lg-9 col-sm-6">
-                  {" "}
-                  <p className="ms-lg-3 ms-md-3">
-                    Discover the Power of Business Consulting with Titilayo!
-                    With a decade of entrepreneurial experience and successful
-                    ventures, Titilayo offers expert advice to business owners
-                    at all stages – ideation, product-market fit, and growth.
-                    Achieve efficiency and sustainable growth for your business
-                    with her strategic insights. Unlock your potential today!
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 d-lg-flex d-md-flex py-2 align-items-center">
-                <div className="col-lg-3 col-sm-6">
-                  <img src={Icon} className="img-fluid" />
-                  <h6 className="mt-3">Facilitation</h6>
-                </div>
-                <div className="col-lg-9 col-sm-6">
-                  {" "}
-                  <p className="ms-lg-3 ms-md-3">
-                    At the heart of every problem lies a knowledge gap, and Titi
-                    is on a mission to bridge it! With a passion for guiding
-                    entrepreneurs, she finds immense joy in imparting the
-                    essential skills of building, growing, and scaling
-                    businesses. As a seasoned facilitator, Titi has shared her
-                    expertise through entrepreneurship classes at prestigious
-                    institutions such as 8thGear Venture Studio, Leap Africa's
-                    E-learning bootcamp, and FCMB Agrohack incubation, among
-                    others. Join Titi on an empowering journey of learning and
-                    watch your entrepreneurial dreams flourish!
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 d-lg-flex d-md-flex py-2 align-items-center">
-                <div className="col-lg-3 col-sm-6">
-                  <img src={Icon} className="img-fluid" />
-                  <h6 className="mt-3">Strategy Development</h6>
-                </div>
-                <div className="col-lg-9 col-sm-6">
-                  {" "}
-                  <p className="ms-lg-3 ms-md-3">
-                    "Unlock Success with Expert Strategy Development! With years
-                    of experience in business consulting, our team, led by
-                    Titilayo, has helped numerous businesses achieve their
-                    goals. From ideation to implementation, we offer tailored
-                    strategies for growth and efficiency. Let us guide you
-                    through every stage, ensuring your business thrives in
-                    today's competitive landscape. Take the first step towards
-                    success and partner with our strategy development experts!"
-                  </p>
-                </div>
-              </div>
-              {/* <div className="col-lg-4 col-md-6 d-flex py-2 align-items-center">
-                <div>
-                  <img src={Icon} className="img-fluid" />
-                  <h6 className="mt-3">Writing</h6>
-                </div>
-                <div>
-                  {" "}
-                  <p className="ms-3">
-                    Lorem ipsum dolor sit amet, cse adipiscing elit, sed do
-                    eiusmod tempr incididunt ut labore et dolore magna
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 d-flex py-2 align-items-center">
-                <div>
-                  <img src={Icon} className="img-fluid" />
-                  <h6 className="mt-3">Writing</h6>
-                </div>
-                <div>
-                  {" "}
-                  <p className="ms-3">
-                    Lorem ipsum dolor sit amet, cse adipiscing elit, sed do
-                    eiusmod tempr incididunt ut labore et dolore magna
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 d-flex py-2 align-items-center">
-                <div>
-                  <img src={Icon} className="img-fluid" />
-                  <h6 className="mt-3">Writing</h6>
-                </div>
-                <div>
-                  {" "}
-                  <p className="ms-3" style={{ fontSize: "" }}>
-                    Lorem ipsum dolor sit amet, cse adipiscing elit, sed do
-                    eiusmod tempr incididunt ut labore et dolore magna
-                  </p>
-                </div>
-              </div> */}
+    <div className="container-fluid px-5 pb-3 mt-5">
+      {" "}
+      <h4 className="">Services</h4>
+      <div className="row justify-content-center mt-3">
+        <div className="col-lg-4 col-md-4 col-sm-10 px-lg-5 px-md-4 px-sm-5 d-flex align-items-stretch">
+          <div className="px-3 mb-5 py-4 visionCard">
+            <div className="">
+              <img src={Icon} />
+            </div>
+            <div className="card-body">
+              <h5 className="card-title mt-3">Business Consulting</h5>
+              <p className="card-text">
+                Discover the Power of Business Consulting with Titilayo! With a
+                decade of entrepreneurial experience and successful ventures,
+                Titilayo offers expert advice to business owners at all stages –
+                ideation, product-market fit, and growth. Achieve efficiency and
+                sustainable growth for your business with her strategic
+                insights. Unlock your potential today!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4 col-md-4 col-sm-10 px-lg-5 px-md-4 px-sm-5 d-flex align-items-stretch">
+          {" "}
+          <div className="px-3 mb-5 py-4 visionCard">
+            <div className="">
+              <img src={Icon} />
+            </div>
+            <div className="card-body">
+              <h5 className="card-title mt-3">Facilitation</h5>
+              <p className="card-text">
+                At the heart of every problem lies a knowledge gap, and Titi is
+                on a mission to bridge it! With a passion for guiding
+                entrepreneurs, she finds immense joy in imparting the essential
+                skills of building, growing, and scaling businesses. As a
+                seasoned facilitator, Titi has shared her expertise through
+                entrepreneurship classes at prestigious institutions such as
+                8thGear Venture Studio, Leap Africa's E-learning bootcamp, and
+                FCMB Agrohack incubation, among others. Join Titi on an
+                empowering journey of learning and watch your entrepreneurial
+                dreams flourish!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4 col-md-4 col-sm-10 px-lg-5 px-md-4 px-sm-5 d-flex align-items-stretch">
+          {" "}
+          <div className="px-3 mb-5 py-4 visionCard">
+            <div className="">
+              <img src={Icon} />
+            </div>
+            <div className="card-body">
+              <h5 className="card-title mt-3">Strategy Development</h5>
+              <p className="card-text">
+                Unlock Success with Expert Strategy Development! With years of
+                experience in business consulting, our team, led by Titilayo,
+                has helped numerous businesses achieve their goals. From
+                ideation to implementation, we offer tailored strategies for
+                growth and efficiency. Let us guide you through every stage,
+                ensuring your business thrives in today's competitive landscape.
+                Take the first step towards success and partner with our
+                strategy development experts!
+              </p>
             </div>
           </div>
         </div>
@@ -506,6 +466,120 @@ const Services = () => {
     </div>
   );
 };
+// const Services = () => {
+//   return (
+//     <div className="container-fluid p-5 aboutBg">
+//       <div className="">
+//         {" "}
+//         <h3 className="pb-4 mx-5">
+//           <b>Services</b>
+//         </h3>
+//         <div className="card-group mx-5">
+//           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto">
+//             <div className="row d-lg-flex d-md-flex ">
+//               <div className="col-lg-4 col-md-6 col-sm-12 d-lg-flex d-md-flex py-2 align-items-center">
+//                 <div className="col-lg-3 col-sm-6">
+//                   <img src={Icon} className="img-fluid" />
+//                   <h6 className="mt-3">Business Consulting</h6>
+//                 </div>
+//                 <div className="col-lg-9 col-sm-6">
+//                   {" "}
+//                   <p className="ms-lg-3 ms-md-3">
+//                     Discover the Power of Business Consulting with Titilayo!
+//                     With a decade of entrepreneurial experience and successful
+//                     ventures, Titilayo offers expert advice to business owners
+//                     at all stages – ideation, product-market fit, and growth.
+//                     Achieve efficiency and sustainable growth for your business
+//                     with her strategic insights. Unlock your potential today!
+//                   </p>
+//                 </div>
+//               </div>
+//               <div className="col-lg-4 col-md-6 d-lg-flex d-md-flex py-2 align-items-center">
+//                 <div className="col-lg-3 col-sm-6">
+//                   <img src={Icon} className="img-fluid" />
+//                   <h6 className="mt-3">Facilitation</h6>
+//                 </div>
+//                 <div className="col-lg-9 col-sm-6">
+//                   {" "}
+//                   <p className="ms-lg-3 ms-md-3">
+//                     At the heart of every problem lies a knowledge gap, and Titi
+//                     is on a mission to bridge it! With a passion for guiding
+//                     entrepreneurs, she finds immense joy in imparting the
+//                     essential skills of building, growing, and scaling
+//                     businesses. As a seasoned facilitator, Titi has shared her
+//                     expertise through entrepreneurship classes at prestigious
+//                     institutions such as 8thGear Venture Studio, Leap Africa's
+//                     E-learning bootcamp, and FCMB Agrohack incubation, among
+//                     others. Join Titi on an empowering journey of learning and
+//                     watch your entrepreneurial dreams flourish!
+//                   </p>
+//                 </div>
+//               </div>
+//               <div className="col-lg-4 col-md-6 d-lg-flex d-md-flex py-2 align-items-center">
+//                 <div className="col-lg-3 col-sm-6">
+//                   <img src={Icon} className="img-fluid" />
+//                   <h6 className="mt-3">Strategy Development</h6>
+//                 </div>
+//                 <div className="col-lg-9 col-sm-6">
+//                   {" "}
+//                   <p className="ms-lg-3 ms-md-3">
+//                     "Unlock Success with Expert Strategy Development! With years
+//                     of experience in business consulting, our team, led by
+//                     Titilayo, has helped numerous businesses achieve their
+//                     goals. From ideation to implementation, we offer tailored
+//                     strategies for growth and efficiency. Let us guide you
+//                     through every stage, ensuring your business thrives in
+//                     today's competitive landscape. Take the first step towards
+//                     success and partner with our strategy development experts!"
+//                   </p>
+//                 </div>
+//               </div>
+//               {/* <div className="col-lg-4 col-md-6 d-flex py-2 align-items-center">
+//                 <div>
+//                   <img src={Icon} className="img-fluid" />
+//                   <h6 className="mt-3">Writing</h6>
+//                 </div>
+//                 <div>
+//                   {" "}
+//                   <p className="ms-3">
+//                     Lorem ipsum dolor sit amet, cse adipiscing elit, sed do
+//                     eiusmod tempr incididunt ut labore et dolore magna
+//                   </p>
+//                 </div>
+//               </div>
+//               <div className="col-lg-4 col-md-6 d-flex py-2 align-items-center">
+//                 <div>
+//                   <img src={Icon} className="img-fluid" />
+//                   <h6 className="mt-3">Writing</h6>
+//                 </div>
+//                 <div>
+//                   {" "}
+//                   <p className="ms-3">
+//                     Lorem ipsum dolor sit amet, cse adipiscing elit, sed do
+//                     eiusmod tempr incididunt ut labore et dolore magna
+//                   </p>
+//                 </div>
+//               </div>
+//               <div className="col-lg-4 col-md-6 d-flex py-2 align-items-center">
+//                 <div>
+//                   <img src={Icon} className="img-fluid" />
+//                   <h6 className="mt-3">Writing</h6>
+//                 </div>
+//                 <div>
+//                   {" "}
+//                   <p className="ms-3" style={{ fontSize: "" }}>
+//                     Lorem ipsum dolor sit amet, cse adipiscing elit, sed do
+//                     eiusmod tempr incididunt ut labore et dolore magna
+//                   </p>
+//                 </div>
+//               </div> */}
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 const Testimonials = () => {
   return (
     <div className="container-fluid p-5 booksBg">
