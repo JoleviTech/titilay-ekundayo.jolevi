@@ -1,3 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--white);
+}
+
+h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.75rem;
+}
+
 .AuthorHeroBgg::before {
   content: "";
   position: absolute;
@@ -70,5 +115,11 @@
 .testimonialCard {
   border-radius: 15px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.servicesCard {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=styles.css.map */

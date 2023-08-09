@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-// import jolevilogo from "../../assets/authors/logo/jolevilogo.png";
-import authorImg from "../assets/authors/authorImg.png";
+import jolevilogo from "../assets/authors/jolevilogo.png";
+import authorImg from "../assets/authors/authorImgtwo.png";
+// import authorImg from "../assets/authors/authorImg.png";
 import BookOne from "../assets/authors/BookOne.png";
 import abegwhosendme from "../assets/authors/abegwhosendme.jpg";
 import ttsrandomthoughts from "../assets/authors/ttsrandomthoughts.jpg";
@@ -9,7 +10,11 @@ import BookThree from "../assets/authors/BookThree.png";
 import Icon from "../assets/authors/icon.png";
 import testimonial from "../assets/authors/testimonial.png";
 // import homehero from "../../assets/website/images/authors/homehero.jpg";
-import homeherotwo from "../assets/authors/homeherotwo.png";
+// import homeherotwo from "../assets/authors/homeherotwo.png";
+import homeherotwo from "../assets/authors/homeherotwotwo.png";
+import businessconsulting from "../assets/authors/services/businessconsulting.png";
+import facilitation from "../assets/authors/services/facilitation.png";
+import strategydevelopment from "../assets/authors/services/strategydevelopment.png";
 // import homeherothree from "../../assets/website/images/authors/homeherothree.png";
 // import homeherofour from "../../assets/website/images/authors/homeherofour.png";
 
@@ -89,7 +94,7 @@ const Navbar = () => {
         <Link to="/" className="navbar-brand ms-lg-5">
           {" "}
           <img
-            // src={jolevilogo}
+            src={jolevilogo}
             className="img-fluid"
             alt="jolevi"
             width="120"
@@ -129,9 +134,13 @@ export const Hero = () => {
             Leaving the world better than we met it
             <br />
           </h3>
-          <p>Abeg who send me </p>
-          <p>Tts random thoughts </p>
-          <div className="d-none d-lg-block d-md-block d-sm-none d-xs-none mt-4">
+          <a href="#abegwhosendme" style={{ color: "#000" }}>
+            <p className="mt-3 mb-0 p-0">Abeg who send me </p>
+          </a>
+          <a href="#ttsrandomthoughts" style={{ color: "#000" }}>
+            <p className="m-0 p-0">Tts random thoughts </p>
+          </a>
+          <div className="d-none d-lg-block d-md-block d-sm-none d-xs-none mt-3">
             <PreorderBtn />
           </div>
         </div>
@@ -179,21 +188,13 @@ const AboutAuthor = () => {
   return (
     <>
       <div className="container-fluid aboutBg">
-        <div className="row align-items-center justify-content-center px-4 py-5">
-          <div className="col-lg-5 col-md-5 col-sm-12">
-            <img
-              src={authorImg}
-              className="d-block mx-lg-auto img-fluid"
-              alt=""
-              loading=""
-            />
-          </div>
+        <div className="row align-items-center justify-content-center px-4 py-5 flex-lg-row-reverse">
           <div className="col-lg-6 col-md-7 col-sm-12 pt-3">
-            <h3 className="">
-              About Me
+            <h4 className="">
+              <b>About Me</b>
               <br />
-            </h3>
-            <p className="mt-4">
+            </h4>
+            <p className="mt-3">
               Titilayo Ekundayo is a dynamic entrepreneur, strategist, and
               influencer in the business world. With a strong focus on
               entrepreneurship, she's had a significant impact on numerous
@@ -224,6 +225,14 @@ const AboutAuthor = () => {
               <ContactMeBtn />
             </div>
           </div>
+          <div className="col-lg-5 col-md-5 col-sm-12 text-center my-2">
+            <img
+              src={authorImg}
+              className="d-block mx-auto img-fluid"
+              alt=""
+              loading=""
+            />
+          </div>
         </div>
       </div>
     </>
@@ -232,13 +241,13 @@ const AboutAuthor = () => {
 
 const FirstBook = () => {
   return (
-    <div className="container-fluid booksBg">
+    <div className="container-fluid booksBg" id="abegwhosendme">
       <div className="row align-items-center justify-content-center px-4 py-5">
-        <div className="col-lg-6 col-md-7 col-sm-12 pt-3">
-          <h3 className="">
+        <div className="col-lg-6 col-md-7 col-sm-12 pt-3 ">
+          <h4 className="">
             <b>Abeg who send me</b>
             <br />
-          </h3>
+          </h4>
           <p className="mt-2">
             "Abeg Who Send Me: Embracing Fear and Embracing Growth in
             Entrepreneurship" is a compelling and insightful compilation of
@@ -279,10 +288,10 @@ const FirstBook = () => {
             <PreorderBtn />
           </div>
         </div>
-        <div className="col-lg-5 col-md-5 col-sm-12">
+        <div className="col-lg-5 col-md-5 col-sm-12 text-center pt-4">
           <img
             src={BookOne}
-            className="d-block mx-lg-auto img-fluid"
+            className="d-block mx-auto img-fluid"
             alt=""
             loading=""
           />
@@ -293,21 +302,13 @@ const FirstBook = () => {
 };
 const SecondBook = () => {
   return (
-    <div className="container-fluid booksBg">
-      <div className="row align-items-center justify-content-center px-4 py-5">
-        <div className="col-lg-5 col-md-5 col-sm-12">
-          <img
-            src={BookTwo}
-            className="d-block mx-lg-auto img-fluid"
-            alt=""
-            loading=""
-          />
-        </div>
+    <div className="container-fluid booksBg" id="ttsrandomthoughts">
+      <div className="row align-items-center justify-content-center px-4 py-5 flex-lg-row-reverse">
         <div className="col-lg-6 col-md-7 col-sm-12 pt-3">
-          <h3 className="">
+          <h4 className="">
             <b>Tts Random Thoughts</b>
             <br />
-          </h3>
+          </h4>
           <p className="mt-2">
             "Inspired Reflections: 365 Days of Enlightening Thoughts" is a
             delightful collection of random musings that began with a playful
@@ -344,6 +345,14 @@ const SecondBook = () => {
           <div className="mb-4">
             <PreorderBtn />
           </div>
+        </div>
+        <div className="col-lg-5 col-md-5 col-sm-12 text-center pt-4">
+          <img
+            src={BookTwo}
+            className="d-block mx-auto img-fluid"
+            alt=""
+            loading=""
+          />
         </div>
       </div>
     </div>
@@ -396,17 +405,19 @@ const ThirdBook = () => {
 
 const Services = () => {
   return (
-    <div className="container-fluid px-5 pb-3 mt-5">
+    <div className="container px-3 pb-3 mt-5">
       {" "}
-      <h4 className="">Services</h4>
-      <div className="row justify-content-center mt-3">
-        <div className="col-lg-4 col-md-4 col-sm-10 px-lg-5 px-md-4 px-sm-5 d-flex align-items-stretch">
-          <div className="px-3 mb-5 py-4 visionCard">
-            <div className="">
-              <img src={Icon} />
+      <h4 className="">
+        <b>Services</b>
+      </h4>
+      <div className="row justify-content-center justify-content-around mt-3">
+        <div className="col-lg-4 col-md-4 col-sm-10  d-flex align-items-stretch">
+          <div className="px-3 mb-5 py-4 servicesCard">
+            <div className="text-center">
+              <img src={businessconsulting} />
             </div>
             <div className="card-body">
-              <h5 className="card-title mt-3">Business Consulting</h5>
+              <h6 className="card-title">Business Consulting</h6>
               <p className="card-text">
                 Discover the Power of Business Consulting with Titilayo! With a
                 decade of entrepreneurial experience and successful ventures,
@@ -418,14 +429,14 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-md-4 col-sm-10 px-lg-5 px-md-4 px-sm-5 d-flex align-items-stretch">
+        <div className="col-lg-4 col-md-4 col-sm-10  d-flex align-items-stretch">
           {" "}
-          <div className="px-3 mb-5 py-4 visionCard">
-            <div className="">
-              <img src={Icon} />
+          <div className="px-3 mb-5 py-4 servicesCard">
+            <div className="text-center">
+              <img src={facilitation} />
             </div>
             <div className="card-body">
-              <h5 className="card-title mt-3">Facilitation</h5>
+              <h6 className="card-title">Facilitation</h6>
               <p className="card-text">
                 At the heart of every problem lies a knowledge gap, and Titi is
                 on a mission to bridge it! With a passion for guiding
@@ -441,14 +452,14 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-md-4 col-sm-10 px-lg-5 px-md-4 px-sm-5 d-flex align-items-stretch">
+        <div className="col-lg-4 col-md-4 col-sm-10  d-flex align-items-stretch">
           {" "}
-          <div className="px-3 mb-5 py-4 visionCard">
-            <div className="">
-              <img src={Icon} />
+          <div className="px-3 mb-5 py-4 servicesCard">
+            <div className="text-center">
+              <img src={strategydevelopment} />
             </div>
             <div className="card-body">
-              <h5 className="card-title mt-3">Strategy Development</h5>
+              <h6 className="card-title">Strategy Development</h6>
               <p className="card-text">
                 Unlock Success with Expert Strategy Development! With years of
                 experience in business consulting, our team, led by Titilayo,
